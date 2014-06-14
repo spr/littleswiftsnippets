@@ -47,7 +47,13 @@ numbers.sort({ $0 < $1 })
 numbers.shuffle()
 numbers
 
-// Trailing closures can omit the ()
+// Trailing closures can exist outside the ()
+numbers.sort() { $0 < $1 }
+
+numbers.shuffle()
+numbers
+
+// Functions that only have one argument can drop the () entirely
 numbers.sort { $0 < $1 }
 
 numbers.shuffle()

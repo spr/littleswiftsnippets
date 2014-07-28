@@ -6,7 +6,7 @@ import Swift
 // A helper function for this example
 extension Array {
     mutating func shuffle() {
-        for i in 0..self.count {
+        for i in 0..<self.count {
             let swapIndex = Int(rand()) % self.count
             let swapValue = self[swapIndex]
             self[swapIndex] = self[i]
